@@ -1,0 +1,113 @@
+name: 🎨 贡献PPT模板
+description: 向模板库提交新模板
+labels: ["contribution", "template"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ 版权声明
+        提交模板前请确认：
+        - 您是该模板的作者，或模板采用下方列出的开源许可证发布
+        - 模板不包含任何受版权保护的第三方素材（图片、字体、图标等）
+        - 如模板源自他人作品，必须在"来源链接"中标注原始出处
+        - **提交侵权模板将被直接关闭并删除**
+
+  - type: input
+    id: template_name
+    attributes:
+      label: 模板名称（英文标识符）
+      description: 小写字母+下划线，如 corporate_blue
+      placeholder: corporate_blue
+    validations:
+      required: true
+
+  - type: input
+    id: display_name
+    attributes:
+      label: 模板显示名（中文）
+      description: 用户在画廊中看到的名字
+      placeholder: 商务蓝调
+    validations:
+      required: true
+
+  - type: input
+    id: scene
+    attributes:
+      label: 适用场景
+      description: academic / business / teaching / tech / creative / general
+      placeholder: business
+    validations:
+      required: true
+
+  - type: input
+    id: description
+    attributes:
+      label: 模板描述
+      description: 一句话描述模板风格和适用场景
+      placeholder: 深蓝渐变商务风格，适合企业年报、董事会汇报
+    validations:
+      required: true
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: 许可证类型
+      description: 仅接受以下开源许可证
+      options:
+        - MIT
+        - Apache-2.0
+        - BSD-2-Clause
+        - BSD-3-Clause
+        - CC0-1.0
+        - CC-BY-4.0
+        - CC-BY-SA-4.0
+        - OFL-1.1
+        - Public-Domain
+    validations:
+      required: true
+
+  - type: input
+    id: source_url
+    attributes:
+      label: 来源链接
+      description: 模板原始出处（GitHub仓库/设计师主页等），原创填"原创"
+      placeholder: https://github.com/...
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: 作者/来源
+      description: 模板作者或来源项目名
+      placeholder: 张三 / some-org/some-repo
+    validations:
+      required: true
+
+  - type: textarea
+    id: pptx_base64
+    attributes:
+      label: 模板文件（Base64编码）
+      description: |
+        将PPTX文件转为Base64后粘贴于此。
+        命令行转换：`base64 your_template.pptx | pbcopy`（macOS）或 `certutil -encode your_template.pptx tmp.b64 && type tmp.b64`（Windows）
+        文件大小限制 5MB
+      render: text
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: copyright_confirm
+    attributes:
+      label: 版权确认
+      options:
+        - label: 我是模板作者或已获得合法授权
+          required: true
+        - label: 模板不包含未授权的第三方素材（图片/字体/图标）
+          required: true
+        - label: 模板采用上述选定的开源许可证发布
+          required: true
+        - label: 如模板源自他人作品，已在来源链接中标注出处
+          required: true
+        - label: 我了解提交侵权模板将被删除，并可能承担法律责任
+          required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 模板使用问题
+    url: https://github.com/Nineteen10512/ppt-template-gallery/discussions
+    about: 使用模板时遇到问题，请在 Discussions 中讨论
