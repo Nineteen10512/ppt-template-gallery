@@ -1,0 +1,222 @@
+{
+  "version": "1.0",
+  "updated": "2026-07-17",
+  "templates": [
+    {
+      "name": "academic",
+      "display_name": "通用学术答辩",
+      "scene": "academic",
+      "description": "深蓝+棕红强调的正式学术风格，适用于课程汇报、开题、答辩等学术场景。",
+      "base_theme": "academic",
+      "style_variant": "minimal_clean",
+      "layout_blueprint": "academic_grid",
+      "cover_style": "校名/logo + 论文标题 + 答辩人 + 导师 + 日期",
+      "default_transition": "fade",
+      "license_id": "MIT",
+      "template_score": 91,
+      "preview_url": "previews/academic.png",
+      "download_url": "releases/academic.zip",
+      "source_refs": [
+        {"name": "scholar-ppt-cn reference template", "url": "https://github.com/deathcats4/scholar-ppt-cn", "stars": 28}
+      ]
+    },
+    {
+      "name": "academic_conference",
+      "display_name": "学术会议报告",
+      "scene": "academic",
+      "description": "极简学术风格，无动画无多余装饰，适用于国际会议、研讨会口头报告。",
+      "base_theme": "academic",
+      "style_variant": "minimal_clean",
+      "layout_blueprint": "conference_poster",
+      "cover_style": "会议 logo + 讲题 + 讲者姓名 + 单位",
+      "default_transition": "fade",
+      "license_id": "MIT",
+      "template_score": 90,
+      "preview_url": "previews/academic_conference.png",
+      "download_url": "releases/academic_conference.zip",
+      "source_refs": [
+        {"name": "BeamerStyleSlides Berlin", "url": "https://github.com/wzpan/BeamerStyleSlides", "stars": 1292}
+      ]
+    },
+    {
+      "name": "business",
+      "display_name": "通用商务路演",
+      "scene": "business",
+      "description": "石板蓝灰商务风，适用于商业汇报、项目路演、行业分析等企业场景。",
+      "base_theme": "business",
+      "style_variant": "corporate_formal",
+      "layout_blueprint": "executive_sliders",
+      "cover_style": "公司 logo + 标语/项目名 + 汇报人 + 日期",
+      "default_transition": "push",
+      "license_id": "MIT",
+      "template_score": 88,
+      "preview_url": "previews/business.png",
+      "download_url": "releases/business.zip",
+      "source_refs": [
+        {"name": "trade-off-sliders-template", "url": "https://github.com/kyanny/trade-off-sliders-template", "stars": 7}
+      ]
+    },
+    {
+      "name": "gaokao_review",
+      "display_name": "高考复习课件",
+      "scene": "teaching",
+      "description": "教学模板变体，重点红标注+右擦动画，按段落逐项出现，专为高考一轮/二轮复习课件设计。",
+      "base_theme": "teaching",
+      "style_variant": "bold_impact",
+      "layout_blueprint": "exam_focus",
+      "cover_style": "学科 + 章节名 + 考纲要求 + 授课教师 + 日期",
+      "default_transition": "wipe_right",
+      "license_id": "MIT",
+      "template_score": 89,
+      "preview_url": "previews/gaokao_review.png",
+      "download_url": "releases/gaokao_review.zip",
+      "source_refs": [
+        {"name": "SoftUni seminar template", "url": "https://github.com/SoftUni/SoftUni-Course-Converter", "stars": 5}
+      ]
+    },
+    {
+      "name": "minimal_clean",
+      "display_name": "极简风",
+      "scene": "general",
+      "description": "黑白灰极简风格，无切换无动画，适用于极简设计、作品集、设计提案。",
+      "base_theme": "academic",
+      "style_variant": "minimal_clean",
+      "layout_blueprint": "minimal_editorial",
+      "cover_style": "大标题 + 几何线框装饰 + 署名",
+      "default_transition": "none",
+      "license_id": "MIT",
+      "template_score": 92,
+      "preview_url": "previews/minimal_clean.png",
+      "download_url": "releases/minimal_clean.zip",
+      "source_refs": [
+        {"name": "simple-presentations classy", "url": "https://github.com/jmablog/simple-presentations-generator", "stars": 28}
+      ]
+    },
+    {
+      "name": "product_launch",
+      "display_name": "产品发布会",
+      "scene": "business",
+      "description": "深色紫蓝渐变发布会风格，zoom切换+放大动画，适用于产品发布会、新品介绍。",
+      "base_theme": "business",
+      "style_variant": "modern_tech",
+      "layout_blueprint": "product_stage",
+      "cover_style": "深色背景 + 产品大图 + 产品名 + 发布日期",
+      "default_transition": "zoom",
+      "license_id": "MIT",
+      "template_score": 90,
+      "preview_url": "previews/product_launch.png",
+      "download_url": "releases/product_launch.zip",
+      "source_refs": [
+        {"name": "metaimagine beauty template", "url": "https://github.com/metaimagine/ai-pptx", "stars": 106}
+      ]
+    },
+    {
+      "name": "project_report",
+      "display_name": "项目汇报",
+      "scene": "business",
+      "description": "冷静蓝商务项目汇报风格，无多余动画，适用于项目进度汇报、工作总结、周报月报。",
+      "base_theme": "business",
+      "style_variant": "corporate_formal",
+      "layout_blueprint": "report_dashboard",
+      "cover_style": "项目名 + 汇报人 + 部门 + 日期",
+      "default_transition": "push",
+      "license_id": "MIT",
+      "template_score": 89,
+      "preview_url": "previews/project_report.png",
+      "download_url": "releases/project_report.zip",
+      "source_refs": [
+        {"name": "ppt-master swiss grid systems", "url": "https://github.com/hugohe3/ppt-master", "stars": 37457}
+      ]
+    },
+    {
+      "name": "startup_pitch",
+      "display_name": "创业路演",
+      "scene": "business",
+      "description": "商务活力橙风格，conveyor切换+底部飞入动画，适用于创业路演、融资BP、产品发布。",
+      "base_theme": "business",
+      "style_variant": "bold_impact",
+      "layout_blueprint": "pitch_diagonal",
+      "cover_style": "产品大图 + 项目名 + Slogan + 日期",
+      "default_transition": "conveyor",
+      "license_id": "MIT",
+      "template_score": 91,
+      "preview_url": "previews/startup_pitch.png",
+      "download_url": "releases/startup_pitch.zip",
+      "source_refs": [
+        {"name": "simple-presentations dark mode", "url": "https://github.com/jmablog/simple-presentations-generator", "stars": 28}
+      ]
+    },
+    {
+      "name": "teaching",
+      "display_name": "教学课件",
+      "scene": "teaching",
+      "description": "绿色大字号教学风格，默认开启段落级入场动画，适用于日常课堂教学课件。",
+      "base_theme": "teaching",
+      "style_variant": "bold_impact",
+      "layout_blueprint": "teaching_cards",
+      "cover_style": "课程名 + 章节名 + 授课教师 + 日期",
+      "default_transition": "fade",
+      "license_id": "MIT",
+      "template_score": 90,
+      "preview_url": "previews/teaching.png",
+      "download_url": "releases/teaching.zip",
+      "source_refs": [
+        {"name": "codex-ppt good skill design", "url": "https://github.com/ningzimu/codex-ppt-skill", "stars": 3213}
+      ]
+    },
+    {
+      "name": "thesis_defense",
+      "display_name": "学位论文答辩",
+      "scene": "academic",
+      "description": "学术答辩专用，深蓝灰细节配色，严肃正式，适用于本科/硕士/博士学位答辩。",
+      "base_theme": "academic",
+      "style_variant": "elegant_luxury",
+      "layout_blueprint": "defense_serif",
+      "cover_style": "校徽 + 论文题目 + 答辩人 + 导师 + 学院 + 日期",
+      "default_transition": "fade",
+      "license_id": "MIT",
+      "template_score": 92,
+      "preview_url": "previews/thesis_defense.png",
+      "download_url": "releases/thesis_defense.zip",
+      "source_refs": [
+        {"name": "BeamerStyleSlides CambridgeUS", "url": "https://github.com/wzpan/BeamerStyleSlides", "stars": 1292}
+      ]
+    },
+    {
+      "name": "training_workshop",
+      "display_name": "培训讲座",
+      "scene": "teaching",
+      "description": "教学活泼黄风格，reveal切换+浮动入场，适用于企业培训、工作坊、公开课。",
+      "base_theme": "teaching",
+      "style_variant": "modern_tech",
+      "layout_blueprint": "workshop_canvas",
+      "cover_style": "培训主题 + 讲师 + 日期",
+      "default_transition": "reveal",
+      "license_id": "MIT",
+      "template_score": 87,
+      "preview_url": "previews/training_workshop.png",
+      "download_url": "releases/training_workshop.zip",
+      "source_refs": [
+        {"name": "Office PowerPoint MCP template effects", "url": "https://github.com/GongRzhe/Office-PowerPoint-MCP-Server", "stars": 1830}
+      ]
+    },
+    {
+      "name": "year_end_review",
+      "display_name": "年终总结",
+      "scene": "business",
+      "description": "暖金棕商务风，适用于年终总结、年度汇报、新年规划。",
+      "base_theme": "business",
+      "style_variant": "elegant_luxury",
+      "layout_blueprint": "annual_ribbon",
+      "cover_style": "年份大字 + 主题词 + 汇报人",
+      "default_transition": "fade",
+      "license_id": "MIT",
+      "template_score": 88,
+      "preview_url": "previews/year_end_review.png",
+      "download_url": "releases/year_end_review.zip",
+      "source_refs": [
+        {"name": "ppt-master brutalist ai newspaper", "url": "https://github.com/hugohe3/ppt-master", "stars": 37457}
+      ]
+    }
+  ]
+}

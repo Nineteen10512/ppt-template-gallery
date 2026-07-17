@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPT 模板库 — Pro PPT Gen</title>
+  <meta name="description" content="PPT 模板画廊：12 个精心设计的学术、商务、教学模板，配合 pro-ppt-gen 技能一键生成专业演示文稿。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">PPT <span>模板库</span></h1>
+      <span class="header-badge">Pro PPT Gen v1.5</span>
+    </div>
+  </header>
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索模板名称或描述…">
+    </div>
+    <div class="filter-group">
+      <button class="filter-btn active" data-scene="all">全部</button>
+      <button class="filter-btn" data-scene="academic">学术</button>
+      <button class="filter-btn" data-scene="business">商务</button>
+      <button class="filter-btn" data-scene="teaching">教学</button>
+      <button class="filter-btn" data-scene="general">通用</button>
+    </div>
+    <span class="template-count" id="templateCount"></span>
+  </div>
+
+  <!-- Gallery -->
+  <main class="gallery" id="gallery">
+    <div class="empty-state">
+      <div class="icon">&#9203;</div>
+      <p>正在加载模板数据…</p>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <h2 id="modalTitle"></h2>
+        <button class="modal-close" id="modalClose" aria-label="关闭">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Usage Guide -->
+  <section class="usage-section">
+    <div class="usage-card">
+      <h2>使用说明</h2>
+
+      <h3>1. 选择模板</h3>
+      <p>浏览上方模板卡片，点击查看详情。每个模板包含场景适配、风格变体、布局蓝图等元数据，帮助你快速找到最合适的模板。</p>
+
+      <h3>2. 复制模板名</h3>
+      <p>在模板详情弹窗中点击「复制模板名」按钮，将模板标识（如 <code>academic</code>、<code>startup_pitch</code>）复制到剪贴板。</p>
+
+      <h3>3. 在 Pro PPT Gen 技能中使用</h3>
+      <p>向 AI 对话中说明你想要的模板，例如：</p>
+      <pre><code>请用 thesis_defense 模板帮我生成一份关于深度学习的学位答辩 PPT</code></pre>
+      <p>或：</p>
+      <pre><code>帮我做一份年终总结PPT，用 year_end_review 模板</code></pre>
+
+      <h3>4. 模板评分说明</h3>
+      <ul>
+        <li><strong>90 分以上</strong>（绿色标记）：高品质模板，来源可靠、布局清晰、场景匹配度高</li>
+        <li><strong>85–89 分</strong>（黄色标记）：合格模板，满足基本使用要求</li>
+        <li>所有模板均需达到 85 分的最低准入标准</li>
+      </ul>
+
+      <h3>5. 许可证</h3>
+      <p>所有模板的源文件均采用 <code>MIT</code> 许可证开源发布，可自由使用和修改。各模板的原始来源在详情页中标注。</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>PPT 模板库 &copy; 2026 &mdash; Pro PPT Gen Skill &mdash; 所有模板源文件采用 MIT 许可证</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
